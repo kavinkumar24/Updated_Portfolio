@@ -30,7 +30,7 @@ function Home() {
           <motion.img
             src={PHOTO}
             alt="image_"
-            className="image relative top-10 md:top-32 md:left-1/4 left-[20%]  transform -translate-x-1/2 md:transform-none h-52 w-52 object-cover brightness-100 z-40 border-0 drop-shadow-md"
+            className="image relative top-10 md:top-32 md:left-1/4 left-[22%]  transform -translate-x-1/2 md:transform-none h-52 w-52 object-cover brightness-100 z-40 border-0 drop-shadow-md"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1, ease: 'easeOut' }}
@@ -39,7 +39,7 @@ function Home() {
         </div>
 
         <motion.div
-          className="content-box absolute md:inset-1/3 inset-y-1/2 inset-x-0 md:w-96 w-full flex items-center justify-center border-[15px] border-[#7275F2] p-4 transform -translate-y-1/2 md:transform-none h-32 md:h-52 "
+          className="content-box absolute md:inset-1/3 inset-y-1/2 inset-x-0 md:w-96 w-full flex items-center justify-center border-[15px] border-[#7275F2] p-4 transform -translate-y-1/2 md:transform-none h-32 md:h-52 rounded-r-xl shadow-lg"
           initial={{ y: '100vh' }}
           animate={{ y: '0vh' }}
           transition={{ duration: 1, ease: 'easeOut' }}

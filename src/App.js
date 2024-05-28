@@ -1,14 +1,15 @@
 import React from 'react';
 import Home from './components/pages/Home';
 import { Route ,Routes} from 'react-router';
-import Demo from './components/pages/Demo';
+import Skills from './components/pages/Skills';
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/demo" element={<Demo />}/>
+        <Route path="/skills" element = {<Skills />}/>
+        
       </Routes>
     </div>
   );
