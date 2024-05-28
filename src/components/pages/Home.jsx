@@ -30,7 +30,7 @@ function Home() {
           <motion.img
             src={PHOTO}
             alt="image_"
-            className="image relative top-40 md:top-32 md:left-1/4 left-[25%]  transform -translate-x-1/2 md:transform-none h-52 w-52 object-cover brightness-100 z-40 border-0 drop-shadow-md"
+            className="image relative top-10 md:top-32 md:left-1/4 left-[20%]  transform -translate-x-1/2 md:transform-none h-52 w-52 object-cover brightness-100 z-40 border-0 drop-shadow-md"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1, ease: 'easeOut' }}
