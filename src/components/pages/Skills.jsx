@@ -24,6 +24,10 @@ import C5 from '../assests/certificate5.png'
 import C6 from '../assests/certificate6.png'
 import C7 from '../assests/certificate7.png'
 import C8 from '../assests/certificate8.png'
+import git from '../assests/github.png'
+import figma from '../assests/figma.png'
+import vs from '../assests/logo.png'
+import db from '../assests/database.png'
 
 
 function Skills() {
@@ -50,7 +54,7 @@ function Skills() {
       { icon: <FiGrid className="w-8 h-8 text-blue-500 mx-auto" />, text: "UI/UX designer" },
       { icon: <FiBookOpen className="w-8 h-8 text-green-500 mx-auto" />, text: "Content creator" },
       { icon: <FiCode className="w-8 h-8 text-red-500 mx-auto" />, text: "Full stack developer" },
-      { icon: <FiVideo className="w-8 h-8 text-yellow-500 mx-auto" />, text: "Educational Background" }
+      { icon: <FiVideo className="w-8 h-8 text-yellow-500 mx-auto" />, text: "Video Editor" }
   ];
 
   const cardsLang = [
@@ -70,7 +74,12 @@ function Skills() {
     { image: Streamlit, text: 'Streamlit' },
     { image: vuejs, text: 'Vue' },
 ];
-
+const cardstools = [
+    {image:git, text:'Git'},
+    {image:figma, text:'Figma'},
+    {image:vs, text:'VS Code'},
+    {image:db, text:'Mongo Db & Mysql'}
+]
 
   // const handlePrev = () => {
   //   const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
@@ -82,7 +91,7 @@ function Skills() {
   //   setCurrentIndex(newIndex);
   // };
   return (
-      <div className='bg-gradient-to-b from-[#e2e7f6] to-[#f6f0e7] min-h-screen'>
+      <div className='bg-gradient-to-b from-[#e2e7f6] via-[#f6f0e7] to-[#e2e7f6] min-h-screen'>
           <Navbar />
           
           <div className="container mx-auto px-4 py-8 md:py-40">
@@ -195,6 +204,23 @@ function Skills() {
                         </div>
                     </div>
                 </div>
+
+                <div className="p-4 rounded-2xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
+                    <div className="container mx-auto px-2 md:py-4">
+                        <h1 className="text-3xl font-bold mb-8 text-center">Tools</h1>
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-0 gap-y-10 justify-items-center">
+                            {cardstools.map((card, index) => (
+                                <div key={index} className="flex flex-col items-center pb-0 mb-0">
+                                    <div className="bg-white rounded-3xl shadow-2xl w-20 h-20 overflow-hidden p-4 hover:scale-95">
+                                        <img src={card.image} alt={card.text} className="w-full h-full object-cover" />
+                                    </div>
+                                    <h2 className="text-base font-semibold mt-4 text-center">{card.text}</h2>
+                                </div>
+                            ))} 
+                        </div>
+                    </div>
+                </div>
+
       <div className="p-4 rounded-2xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
                     <div className="container mx-auto px-2 md:py-4">
                         <h1 className="text-3xl font-bold mb-8 text-center">Certificates</h1>
