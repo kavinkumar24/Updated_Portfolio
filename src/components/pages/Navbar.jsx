@@ -4,16 +4,39 @@ import { IoCloseCircle } from "react-icons/io5";
 import { useNavigate } from 'react-router';
 import sign from '../assests/sign.jpg';
 import sign_mobile from '../assests/sign_copy.jpg';
-
+import { FiHome, FiBook, FiBriefcase, FiPhone } from 'react-icons/fi';
 function Navbar() {
   const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const[loading,setLoading] = useState(false)
 
   const handleNav = () => {
     setShowMenu(!showMenu);
   };
+  const navigate_contact = () =>{
+    setLoading(true)
+    setTimeout(() => {  
+     setLoading(false)
+     navigate('/contact')
+    }, 2000);
+    
+  }
 
+  const navigate_home = () =>{
+    setLoading(true)
+    setTimeout(() => {  
+     setLoading(false)
+     navigate('/')
+    }, 2000);
+  }
+  const navigate_projects =  () =>{
+    setLoading(true)
+    setTimeout(() => {  
+     setLoading(false)
+     navigate('/projects')
+    }, 2000);
+  }
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 170);
@@ -25,7 +48,12 @@ function Navbar() {
   }, []);
 
   const navigate_to_skills = () => {
-    navigate('/skills');
+    setLoading(true)
+    setTimeout(() => {  
+     setLoading(false)
+     navigate('/skills');
+    }, 2000);
+    
   };
 
   return (
@@ -46,10 +74,23 @@ function Navbar() {
       </div>
       <div className='flex justify-between fixed right-0 z-50'>
         <ul className='hidden md:flex md:items-center gap-[0vw] mr-16'>
-          <li className='p-4 mx-8 bg-indigo-500 text-white w-20 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer'>Home</li>
-          <li className='p-4 mx-8 bg-indigo-500 text-white w-20 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer' onClick={navigate_to_skills}>Skills</li>
-          <li className='p-4 mx-8 bg-indigo-500 text-white w-20 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer'>Projects</li>
-          <li className='p-4 mx-8 bg-indigo-500 text-white h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer'>Contact</li>
+        <li class="p-4 mx-8 bg-indigo-500 text-white w-30 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer text-nowrap" onClick={navigate_home}>
+        <div className="flex items-center"> <div className='text-[#322f2e]'><FiHome className='mr-2' /></div>&nbsp;Home
+        </div>
+      </li>
+
+      <li class="p-4 mx-8 bg-indigo-500 text-white w-30 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer text-nowrap" onClick={navigate_to_skills}>
+        <div className="flex items-center"> <div className='text-[#322f2e]'><FiBook className='mr-2' /></div>&nbsp;Skills
+        </div>
+      </li>
+      <li class="p-4 mx-8 bg-indigo-500 text-white w-30 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer text-nowrap" onClick={navigate_projects}>
+        <div className="flex items-center"> <div className='text-[#322f2e]'><FiBriefcase className='mr-2' /></div>&nbsp;Projects
+        </div>
+      </li>
+      <li class="p-4 mx-8 bg-indigo-500 text-white w-30 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer text-nowrap" onClick={navigate_contact}>
+        <div className="flex items-center"> <div className='text-[#322f2e]'><FiPhone className='mr-2' /></div>&nbsp;Contact
+        </div>
+      </li>
         </ul>
       </div>
       <div onClick={handleNav} className='block md:hidden'>
@@ -59,11 +100,18 @@ function Navbar() {
         <div className='fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-700 md:hidden z-50'>
           <img src={sign_mobile} alt="sign_logo" width="20%" className="w-28 left-0" />
           <ul className='pt-2 uppercase'>
-            <li className='p-4 border-b border-indigo-300 text-black'>Home</li>
-            <li className='p-4 border-b border-indigo-300 text-black'>Skills</li>
-            <li className='p-4 border-b border-indigo-300 text-black'>Projects</li>
-            <li className='p-4 border-b border-indigo-300 text-black'>Contact</li>
+            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_home}>Home</li>
+            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_to_skills}>Skills</li>
+            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_projects}>Projects</li>
+            <li className='p-4 border-b border-indigo-300 text-black' onClick={navigate_contact}>Contact</li>
           </ul>
+        </div>
+      )}
+
+      {loading && (
+          <div class="bg-white max-w-full max-h-full fixed px-96 inset-0 z-50">
+          <div class="max-h-10 w-10 items-center justify-center pt-10 relative top-96 -left-48 md:top-60 md:left-52 animate-pulse rounded-full border-4 border-indigo-500	"></div>
+          
         </div>
       )}
     </div>

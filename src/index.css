@@ -6,12 +6,18 @@
     font-family: "Miltonian Tattoo", serif;
     font-weight: 400;
     font-style: normal;
+    /* background-image: linear-gradient(to right, red, blue); */
+    
+  background: -webkit-linear-gradient(315deg, #ac81eb 0%, #6870f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   }
   
   .pridi-regular {
     font-family: "Pridi", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 100;
+    font-style: light;
   }
   
   body{
