@@ -80,7 +80,7 @@ function Home() {
         1000
       ]}
       wrapper="span"
-      speed={50} className='pridi-regular text-gray-700 text-sm'
+      speed={50} className='pridi-regular text-gray-700 text-sm border-b-2 p-2 border-gray-300'
       style={{ fontSize: '2em', display: 'inline-block' }}
       repeat={Infinity}
     />
