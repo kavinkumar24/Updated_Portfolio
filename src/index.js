@@ -4,13 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import '@mantine/carousel/styles.css';
+import { MantineProvider } from '@mantine/core';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <MantineProvider>
     <BrowserRouter>
     <App />
     </BrowserRouter>
+    </MantineProvider>
   </React.StrictMode>
 );
 

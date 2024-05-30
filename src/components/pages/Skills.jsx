@@ -28,6 +28,7 @@ import git from '../assests/github.png'
 import figma from '../assests/figma.png'
 import vs from '../assests/logo.png'
 import db from '../assests/database.png'
+import Footer from './Footer';
 
 
 function Skills() {
@@ -72,7 +73,7 @@ function Skills() {
     { image: Reactjs, text: 'React Js' },
     { image: Nodejs, text: 'Node Js' },
     { image: Streamlit, text: 'Streamlit' },
-    { image: vuejs, text: 'Vue' },
+    { image: vuejs, text: 'Vue Js' },
 ];
 const cardstools = [
     {image:git, text:'Git'},
@@ -160,7 +161,7 @@ const cardstools = [
             <div className="container mx-auto px-4 py-8 md:py-0">
                 <div className="p-4 rounded-2xl justify-between mb-0 md:mb-0 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
                     <div className="container mx-auto px-4 md:py-10">
-                        <h1 className='text-3xl font-bold mb-8 text-center'>Professional Skills</h1>
+                        <h1 className='text-3xl font-bold mb-8 text-center text-zinc-700'>Professional Skills</h1>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {cards.map((card, index) => (
                                 <div key={index} className="bg-white p-6 rounded-lg shadow-md h-36 hover:scale-95">
@@ -174,7 +175,7 @@ const cardstools = [
 
                 <div className="p-4 rounded-2xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
                     <div className="container mx-auto px-2 md:py-4">
-                        <h1 className="text-3xl font-bold mb-8 text-center">Languages</h1>
+                        <h1 className="text-3xl font-bold mb-8 text-center text-zinc-700">Languages</h1>
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-0 gap-y-10 justify-items-center">
                             {cardsLang.map((card, index) => (
                                 <div key={index} className="flex flex-col items-center pb-0 mb-0">
@@ -191,7 +192,7 @@ const cardstools = [
 
                 <div className="p-4 rounded-2xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
                     <div className="container mx-auto px-2 md:py-4">
-                        <h1 className="text-3xl font-bold mb-8 text-center">Frameworks</h1>
+                        <h1 className="text-3xl font-bold mb-8 text-center text-zinc-700">Frameworks</h1>
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-0 gap-y-10 justify-items-center">
                             {cardsframe.map((card, index) => (
                                 <div key={index} className="flex flex-col items-center pb-0 mb-0">
@@ -207,7 +208,7 @@ const cardstools = [
 
                 <div className="p-4 rounded-2xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
                     <div className="container mx-auto px-2 md:py-4">
-                        <h1 className="text-3xl font-bold mb-8 text-center">Tools</h1>
+                        <h1 className="text-3xl font-bold mb-8 text-center text-zinc-700">Tools</h1>
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-0 gap-y-10 justify-items-center">
                             {cardstools.map((card, index) => (
                                 <div key={index} className="flex flex-col items-center pb-0 mb-0">
@@ -223,7 +224,7 @@ const cardstools = [
 
       <div className="p-4 rounded-2xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
                     <div className="container mx-auto px-2 md:py-4">
-                        <h1 className="text-3xl font-bold mb-8 text-center">Certificates</h1>
+                        <h1 className="text-3xl font-bold mb-8 text-center text-zinc-700">Certificates</h1>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
           <div key={index} className="group relative">
@@ -235,13 +236,11 @@ const cardstools = [
           </div>
         ))}
       </div>
-                    </div>
-                </div>
-
-
+    </div>
+        </div>
     </div>
 
-           
+    <Footer />
 
         </div>
     );

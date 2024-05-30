@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import PHOTO from '../assests/profile-pic (3).png';
 import DEFAULT_PHOTO from '../assests/cartoon.avif';
 import { TypeAnimation } from 'react-type-animation';
-
+import Footer from './Footer';
 
 function Home() {
   const [isTextVisible, setIsTextVisible] = useState(false);
@@ -123,6 +123,7 @@ function Home() {
           </motion.p>
         </div>
       </motion.div>
+      <Footer />
     </div>
   );
 }

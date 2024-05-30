@@ -22,5 +22,28 @@
   
   body{
     background-image: linear-gradient(to right, #e2e7f6, #f6f0e7);
-
   }
+  .sirin-stencil-regular {
+    font-family: "Sirin Stencil", sans-serif;
+    font-weight: 500;
+    font-style:normal;
+  }
+  
+  .gupter-regular {
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .gupter-medium {
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .gupter-bold {
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  

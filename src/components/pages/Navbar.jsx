@@ -75,20 +75,38 @@ function Navbar() {
       <div className='flex justify-between fixed right-0 z-50'>
         <ul className='hidden md:flex md:items-center gap-[0vw] mr-16'>
         <li class="p-4 mx-8 bg-indigo-500 text-white w-30 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer text-nowrap" onClick={navigate_home}>
-        <div className="flex items-center"> <div className='text-[#322f2e]'><FiHome className='mr-2' /></div>&nbsp;Home
+        <div className="flex items-center"> <div className='text-[#322f2e]'>
+          <div className='bg-zinc-100  p-1 rounded-lg'>
+          <FiHome className='mr-1 ml-1' />
+          </div>
+          </div>&nbsp;Home
         </div>
       </li>
 
       <li class="p-4 mx-8 bg-indigo-500 text-white w-30 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer text-nowrap" onClick={navigate_to_skills}>
-        <div className="flex items-center"> <div className='text-[#322f2e]'><FiBook className='mr-2' /></div>&nbsp;Skills
+        <div className="flex items-center"> <div className='text-[#322f2e]'>
+        <div className='bg-zinc-100  p-1 rounded-lg'>
+          
+          <FiBook className='mr-1 ml-1' />
+          </div>
+          </div>&nbsp;Skills
+
         </div>
       </li>
       <li class="p-4 mx-8 bg-indigo-500 text-white w-30 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer text-nowrap" onClick={navigate_projects}>
-        <div className="flex items-center"> <div className='text-[#322f2e]'><FiBriefcase className='mr-2' /></div>&nbsp;Projects
+        <div className="flex items-center"> <div className='text-[#322f2e]'>
+        <div className='bg-zinc-100  p-1 rounded-lg'>
+          <FiBriefcase className='mr-1 ml-1' />
+          </div>
+          </div>&nbsp;Projects
         </div>
       </li>
       <li class="p-4 mx-8 bg-indigo-500 text-white w-30 h-10 justify-center items-center pt-2 text-black-600 rounded-xl hover:bg-indigo-600 shadow-xl hover:shadow duration-200 cursor-pointer text-nowrap" onClick={navigate_contact}>
-        <div className="flex items-center"> <div className='text-[#322f2e]'><FiPhone className='mr-2' /></div>&nbsp;Contact
+        <div className="flex items-center"> <div className='text-[#322f2e]'>
+         <div className='bg-zinc-100  p-1 rounded-lg'>
+          <FiPhone className='mr-1 ml-1' />
+          </div>
+          </div>&nbsp;Contact
         </div>
       </li>
         </ul>
@@ -100,10 +118,16 @@ function Navbar() {
         <div className='fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-700 md:hidden z-50'>
           <img src={sign_mobile} alt="sign_logo" width="20%" className="w-28 left-0" />
           <ul className='pt-2 uppercase'>
-            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_home}>Home</li>
-            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_to_skills}>Skills</li>
-            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_projects}>Projects</li>
-            <li className='p-4 border-b border-indigo-300 text-black' onClick={navigate_contact}>Contact</li>
+          <li class="p-4 border-b border-indigo-300 text-black" onClick={navigate_home}>
+        <div className="flex items-center"> <div className='text-[#322f2e]'><FiHome className='mr-2' /></div>&nbsp;Home
+        </div>
+      </li>
+            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_to_skills}><div className="flex items-center"> <div className='text-[#322f2e]'><FiBook className='mr-2' /></div>&nbsp;Skills
+        </div></li>
+            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_projects}><div className="flex items-center"> <div className='text-[#322f2e]'><FiBriefcase className='mr-2' /></div>&nbsp;Projects
+        </div></li>
+            <li className='p-4 border-b border-indigo-300 text-black' onClick={navigate_contact}><div className="flex items-center"> <div className='text-[#322f2e]'><FiPhone className='mr-2' /></div>&nbsp;Contact
+        </div></li>
           </ul>
         </div>
       )}
