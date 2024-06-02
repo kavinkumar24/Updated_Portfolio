@@ -60,7 +60,9 @@ function Navbar() {
     <div className={`flex justify-between items-center h-24 w-full px-4 text-zinc-800 md:fixed z-50 bg-[#e2e7f6] ${isScrolled ? 'shadow-md' : ''}`}>
         <div className={`w-28 left-0`}>
           {window.innerWidth < 768 ? (
-            <h1 className="text-4xl font-bold text-indigo-700 left-10">KK</h1>
+            
+            <img src={sign} alt="sign_logo" width="15%" className='w-28' />
+
           ) : (
             <img src={sign} alt="sign_logo" width="20%" className='w-28' />
           )}
@@ -134,7 +136,7 @@ function Navbar() {
 
       {loading && (
           <div class="bg-white max-w-full max-h-full fixed px-96 inset-0 z-50">
-          <div class="max-h-10 w-10 items-center justify-center pt-10 relative top-96 -left-48 md:top-60 md:left-52 animate-pulse rounded-full border-4 border-indigo-500	"></div>
+          <div class="max-h-10 w-10 items-center justify-center pt-10 relative top-72 -left-52 md:top-60 md:left-52 animate-pulse rounded-full border-4 border-indigo-500	"></div>
           
         </div>
       )}
