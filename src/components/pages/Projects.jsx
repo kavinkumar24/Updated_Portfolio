@@ -37,7 +37,7 @@ const projects = [
   },
   
   {
-    title: "BUDGET BUDDY(finance tracker)",
+    title: "BUDGET BUDDY",
     description: "Developed a personal finance management web application using React Js, tailwind CSS, Node js, and MongoDB. It helps to track where the money is going and also implemented many features like Budget planning (yearly, monthly), Daily Notes, investing plans, etc",
     images: [P2_1, P2_2, P2_3, P2_4, P2_5,P2_6],
     githublink:'https://github.com/kavinkumar24/Finance_website.git',
@@ -68,8 +68,8 @@ function Projects() {
       <div className="container mx-auto px-4 py-8 md:py-40">
         <h1 className='mx-auto md:px-0 text-3xl font-bold mb-4 text-zinc-700'>Projects</h1>
         {projects.map((project, index) => (
-          <div key={index} className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-10 md:w-full mx-auto flex flex-col items-center md:flex-row">
-            <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:min-w-96 md:h-56 lg:h-58 h-48">
+          <div key={index} className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-10 md:w-5/6 mx-auto flex flex-col items-center md:flex-row">
+            <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:min-w-96 md:h-56 lg:h-58 h-48 xl:w-40">
               <Carousel withControls height={200} withIndicators>
                 {project.images.map((image, imgIndex) => (
                   <Carousel.Slide key={imgIndex}>
