@@ -1,8 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { FiUser, FiBriefcase, FiBook, FiArrowLeft, FiArrowRight  } from 'react-icons/fi'; 
-import { FiCode,FiGrid, FiBookOpen,FiVideo ,FaChevronLeft, FaChevronRight } from 'react-icons/fi';
-import { useState } from 'react';
+import { FiCode,FiGrid, FiBookOpen,FiVideo } from 'react-icons/fi';
 import { useEffect } from 'react';
 import Html from '../assests/html.png'
 import Css from '../assests/css-3.png'
@@ -32,11 +30,11 @@ import Footer from './Footer';
 
 
 function Skills() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+//   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
       const interval = setInterval(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        //   setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       }, 3000);
       return () => clearInterval(interval);
   }, []);
