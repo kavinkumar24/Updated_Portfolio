@@ -29,7 +29,7 @@ const Contact = () => {
     <Navbar />
     
     <div className="mx-4 flex flex-col items-center md:flex-row min-h-screen justify-between md:mx-40 mb-10">
-      <div className="w-full max-w-md p-4 bg-white rounded-2xl shadow-lg md:mt-28">
+      <div className="w-full max-w-md p-4 bg-white rounded-2xl shadow-lg md:mt-20">
         <h2 className="mb-4 text-2xl font-bold text-center text-gray-800">Message me</h2>
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <div>
@@ -54,7 +54,7 @@ const Contact = () => {
             <label className="block mb-2 text-sm font-bold text-gray-700">Message</label>
             <textarea
               name="message"
-              className="w-full h-20 px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 border-2 border-gray-200 "
+              className="w-full h-10 px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 border-2 border-gray-200 "
               required
             ></textarea>
           </div>
@@ -75,7 +75,7 @@ const Contact = () => {
         <div className=' max-w-md p-8 space-y-20 w-3/2'>
           <div className='flex flex-col'>
             <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 w-full rounded-md'>
-            <div className='p-2 bg-blue-700 rounded-full text-white shadow-md'>
+            <div className='p-2 bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
               <FiLinkedin />
             </div>
             <div className='text-center justify-center mx-auto mt-1'>
@@ -84,7 +84,7 @@ const Contact = () => {
             </div>
 
             <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 w-full rounded-md'>
-            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md'>
+            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
               <FiMail />
             </div> 
             <div className='text-center justify-center mx-auto mt-1'>
@@ -93,14 +93,14 @@ const Contact = () => {
             </div>
 
             <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 rounded-md'>
-            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md' >
+            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90' >
               <FiPhone />
             </div>
             <h1>9345695264</h1>
             </div>
 
             <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 rounded-md'>
-            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md'>
+            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
               <FiGithub />
             </div>
             <a href="https://github.com/kavinkumar24/" className='hover:text-indigo-700 hover:underline'>GitHub</a>
@@ -108,7 +108,7 @@ const Contact = () => {
 
 
             <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 rounded-md'>
-            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md'>
+            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
               <FiCode />
             </div>
             <a href="https://leetcode.com/kavinpalanisamy/" className='hover:text-indigo-700 hover:underline'>Leetcode</a>
