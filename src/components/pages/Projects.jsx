@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../pages/Navbar'
-import img from '../assests/cartoon.avif'
 import { Carousel } from '@mantine/carousel';
 import '@mantine/carousel/styles.css';
 import { FiGithub , FiEye} from 'react-icons/fi';

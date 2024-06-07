@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CiSearch, CiMenuFries } from "react-icons/ci";
+import { CiMenuFries } from "react-icons/ci";
 import { IoCloseCircle } from "react-icons/io5";
 import { useNavigate } from 'react-router';
 import sign from '../assests/sign.jpg';
