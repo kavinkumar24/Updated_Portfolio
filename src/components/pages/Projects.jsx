@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../pages/Navbar'
 import { Carousel } from '@mantine/carousel';
 import '@mantine/carousel/styles.css';
-import { FiGithub , FiEye} from 'react-icons/fi';
+import { FiGithub , FiEye, FiArrowRightCircle} from 'react-icons/fi';
 import Footer from '../pages/Footer'
 // Images for projects
 import P1_1 from '../assests/Project1/p1.ii.png'
@@ -68,6 +68,7 @@ function Projects() {
         <h1 className='mx-auto md:px-0 text-3xl font-bold mb-4 text-zinc-700'>Projects</h1>
         {projects.map((project, index) => (
           <div key={index} className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-10 md:w-5/6 mx-auto flex flex-col items-center md:flex-row">
+            
             <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:min-w-96 md:h-56 lg:h-58 h-48 xl:w-40">
               <Carousel withControls height={200} withIndicators>
                 {project.images.map((image, imgIndex) => (
@@ -76,6 +77,8 @@ function Projects() {
                   </Carousel.Slide>
                 ))}
               </Carousel>
+              
+              <p className='text-nowrap pt-4 italic text-green-600'>Drag and scroll<FiArrowRightCircle /> </p>
             </div>
             <div className='ml-0 md:ml-16'>
               <h2 className="text-[#3275ba] text-2xl font-bold md:text-5xl mb-4 sirin-stencil-regular">{project.title}</h2>

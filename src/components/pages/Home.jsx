@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import { motion } from 'framer-motion';
-import PHOTO from '../assests/profile-pic (3).png';
+import PHOTO from '../assests/profile-pic.png';
 import DEFAULT_PHOTO from '../assests/cartoon.avif';
 import { TypeAnimation } from 'react-type-animation';
 import Footer from './Footer';
@@ -31,7 +31,7 @@ function Home() {
       >
         <div className="image-container relative flex justify-center">
           <motion.img
-            src={DEFAULT_PHOTO}
+            src={PHOTO}
             alt="Default"
             className="default-image h-52 w-52 mt-40 ml-0 md:h-52 md:w-52 object-cover brightness-95 z-40 border-0 drop-shadow-md rounded-full shadow-lg shadow-indigo-500/50"
             initial={{ scale: 0 }}
@@ -40,9 +40,9 @@ function Home() {
             whileHover={{ opacity: 0 }}
           />
           <motion.img
-            src={PHOTO}
+            src={DEFAULT_PHOTO}
             alt="Profile"
-            className="profile-image h-52 w-52 mt-40 ml-0 md:h-52 md:w-52 object-cover brightness-95 z-40 border-0 drop-shadow-md absolute"
+            className="profile-image h-52 w-52 mt-40 ml-0 md:h-52 md:w-52 object-cover brightness-95 z-40 border-0 drop-shadow-md absolute rounded-full shadow-lg shadow-indigo-500/50"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 0 }}
             transition={{ duration: 1, ease: 'easeOut' }}
