@@ -67,18 +67,17 @@ function Projects() {
       <div className="container mx-auto px-4 py-8 md:py-40">
         <h1 className='mx-auto md:px-0 text-3xl font-bold mb-4 text-zinc-700'>Projects</h1>
         {projects.map((project, index) => (
-          <div key={index} className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-10 md:w-5/6 mx-auto flex flex-col items-center md:flex-row">
-            
+          <div key={index} className="xl:h-80 bg-white p-3 rounded-2xl shadow-xl justify-between mb-4 md:mb-10 md:w-5/6 mx-auto flex flex-col items-center md:flex-row">
             <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:min-w-96 md:h-56 lg:h-58 h-48 xl:w-40">
-              <Carousel withControls height={200} withIndicators>
+              <Carousel withControls height={500} withIndicators>
                 {project.images.map((image, imgIndex) => (
                   <Carousel.Slide key={imgIndex}>
                     <img src={image} alt={`Project_${index + 1}_img_${imgIndex + 1}`} className='w-96 object-contain' />
                   </Carousel.Slide>
                 ))}
               </Carousel>
-              
-              <p className='text-nowrap pt-4 italic text-green-600'>Drag and scroll<FiArrowRightCircle /> </p>
+               
+              <p className='text-nowrap pt-2 italic text-green-600 md:pt-10 flex-nowrap'>Drag and scroll<FiArrowRightCircle /> </p>
             </div>
             <div className='ml-0 md:ml-16'>
               <h2 className="text-[#3275ba] text-2xl font-bold md:text-5xl mb-4 sirin-stencil-regular">{project.title}</h2>
@@ -87,7 +86,7 @@ function Projects() {
               <a 
                 href={project.githublink} 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer"
                 className="bg-[#3275ba] text-white px-4 py-2 rounded-md mt-4 inline-block hover:scale-90 hover:shadow-lg"
               >
                 <div className='flex items-center'>
