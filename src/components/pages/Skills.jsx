@@ -93,45 +93,58 @@ const cardstools = [
       <div className='bg-gradient-to-b from-[#e2e7f6] via-[#f6f0e7] to-[#e2e7f6] min-h-screen'>
           <Navbar />
           
-          <div className="container mx-auto px-4 py-8 md:py-40">
+          <div className="container mx-auto px-2 py-8 md:py-32 md:-mb-12">
               <h1 className='mx-auto md:px-40 text-3xl font-bold mb-4 text-zinc-700'>Experience</h1>
               <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
-                  <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
+                  <div className="bg-[#eeeeee] p-6 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[100%] md:h-[90%]">
                       <h4 className="text-md font-bold mb-2">Project Intern</h4>
                       <h3 className="text-sm font-light mb-2">Coimbatore</h3>
                       <h3 className="text-sm font-semibold text-[#007bff]">2023 (3 months)</h3>
                   </div>
                   <div className='ml-0 md:ml-16'>
                       <h2 className="text-[#3275ba] text-2xl font-bold md:text-4xl">Strackit Private Limited</h2>
-                      <p className="text-base text-justify mt-4">In this Internship time period, I've learned many things, related to react, as a Software Engineer, They hire me as a software developer in react js with the database of mongodb I'm so grateful to myself for believing in myself and taking the necessary steps to make my dream a reality.</p>
+                      <p className="text-base text-justify mt-4">During my internship, I've gained invaluable knowledge and skills, particularly in <span className="highlight bg-green-200">React.js</span> and backend development with <span className="highlight bg-green-200">GraphQL (Apollo).</span> I also learned about <span className="highlight bg-green-200">Scrum</span> and <span className="highlight bg-green-200">sprint planning</span>, which enhanced my ability to work effectively in an Agile environment. Being hired as a software developer in this domain is a testament to my dedication and belief in myself. I'm incredibly grateful for taking the necessary steps to turn my dream into reality.</p>
+                        
                   </div>
               </div>
               <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
-                  <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
+                  <div className="bg-[#eeeeee] p-6 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
                       <h4 className="text-md font-bold mb-2">Project Intern</h4>
                       <h3 className="text-sm font-light mb-2">Chennai</h3>
                       <h3 className="text-sm font-semibold text-[#007bff]">2023 (1 month)</h3>
                   </div>
                   <div className='ml-0 md:ml-16'>
                       <h2 className="text-[#3275ba] text-2xl md:text-4xl font-bold">Stellar academy</h2>
-                      <p className="text-base text-justify mt-4">During this Internship period, I built the react application and I'm new to PostgreSql for backend Database so I learned it side by side, In those periods I worked in a team of 3, were I can learn how to communicate with team members to complete the projects easily.</p>
+                      <p className="text-base text-justify mt-4">During my internship, I built a <span className="highlight bg-red-200">React application</span> while simultaneously learning <span className="highlight bg-red-200">PostgreSQL</span> for the backend database. Working in a team of three, I gained valuable experience in effective communication and collaboration, which facilitated the smooth completion of our projects.</p>
                   </div>
               </div>
               <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
-                  <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
+                  <div className="bg-[#eeeeee] p-6 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[75%]">
                       <h4 className="text-md font-bold mb-2">Web Developer</h4>
                       <h3 className="text-sm font-light mb-2">Trichy</h3>
                       <h3 className="text-sm font-semibold text-[#007bff]">2023-2024 (6 months)</h3>
                   </div>
                   <div className='ml-0 md:ml-16'>
                       <h2 className="text-[#3275ba] text-2xl md:text-4xl font-bold">Trio devs Digital Services</h2>
-                      <p className="text-base text-justify mt-4">During this Internship period, I built the react application and I'm new to PostgreSql for backend Database so I learned it side by side, In those periods I worked in a team of 3, where I learned how to communicate with team members to complete the projects easily.</p>
+                      <p className="text-base text-justify mt-4">As an intern specializing in <span className="highlight bg-yellow-100">React.js</span> and web development tools, I developed and tested a dynamic website based on customer needs, and following the <span className="highlight bg-yellow-100">Software Development Life Cycle (SDLC)</span> in a virtual collaboration environment. This experience enhanced my expertise in building interactive web apps with a focus on accountability and usability.</p>
                   </div>
               </div>
           </div>
+          
 
-          <div className="container mx-auto px-4 md:py-0">
+          <div className="container mx-auto px-4 md:-py-10">
               <h1 className='mx-auto md:px-40 text-3xl font-bold mb-4 text-zinc-700'>Education</h1>
+              <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
+                  <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
+                        <h4 className="text-md font-bold mb-2">Undergraduate (CT)</h4>
+                        <h3 className="text-sm font-light mb-2">Sathyamangalam</h3>
+                        <h3 className="text-sm font-semibold text-[#007bff]">2021-2025</h3>
+                    </div>
+                    <div className='ml-0 md:ml-16'>
+                        <h2 className="text-[#3275ba] text-2xl font-bold md:text-4xl">Bannari Amman Institute of Technology</h2>
+                        <p className="text-base text-justify mt-4">I'm currently pursuing a B.Tech in Computer Technology at Bannari Amman Institute of Technology, where I am in my final year (7th semester). Throughout my studies, from the 1st semester to now, I have been learning all the core concepts of computer science, which has greatly enhanced my understanding of various problems.</p>
+                    </div>
+                </div>
               <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
                   <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
                       <h4 className="text-md font-bold mb-2">SSLC & HSC</h4>
@@ -145,15 +158,15 @@ const cardstools = [
               </div>
               <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
                   <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
-                        <h4 className="text-md font-bold mb-2">Undergraduate (CT)</h4>
-                        <h3 className="text-sm font-light mb-2">Sathyamangalam</h3>
-                        <h3 className="text-sm font-semibold text-[#007bff]">2021-2025</h3>
-                    </div>
-                    <div className='ml-0 md:ml-16'>
-                        <h2 className="text-[#3275ba] text-2xl font-bold md:text-4xl">Bannari Amman Institute of Technology</h2>
-                        <p className="text-base text-justify mt-4">I'm pursuing B.Tech in Computer Technology at Bannari Amman Institute of Technology, where I have been learning all the core concepts of computer science from the 1st semester to the 8th semester, which has enhanced my understanding of various problems.</p>
-                    </div>
-                </div>
+                      <h4 className="text-md font-bold mb-2">SSLC & HSC</h4>
+                      <h3 className="text-sm font-light mb-2">Dharapuram</h3>
+                      <h3 className="text-sm font-semibold text-[#007bff]">2019 - 2021</h3>
+                  </div>
+                  <div className='ml-0 md:ml-16'>
+                      <h2 className="text-[#3275ba] text-2xl font-bold md:text-4xl">P.M.H.S.S</h2>
+                      <p className="text-base text-justify mt-4">I did my schooling at P.M.H.S.S in Dharapuram, where I completed my 10th, 11th, and 12th standards and learned some basic core subjects (Maths and Physics) along with some life skills.</p>
+                  </div>
+              </div>
             </div>
 
             <div className="container mx-auto px-4 py-8 md:py-0">

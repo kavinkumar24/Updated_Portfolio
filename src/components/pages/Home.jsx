@@ -122,8 +122,13 @@ function Home() {
             <span className="highlight bg-yellow-200">fostering growth and success.</span>
           </motion.p>
         </div>
+        {/* <div className='bg-slate-100 w-20 grid-cols-3'>
+        <h1>Instagram</h1>
+      </div> */}
       </motion.div>
+    
       <Footer />
+      
     </div>
   );
 }
