@@ -135,8 +135,10 @@ function Navbar() {
       )}
 
       {loading && (
-          <div class="bg-white max-w-full max-h-full fixed px-96 inset-0 z-50">
-          <div class="max-h-10 w-10 items-center justify-center pt-10 relative top-72 -left-52 md:top-60 md:left-52 animate-pulse rounded-full border-4 border-indigo-500	"></div>
+          <div class="bg-white max-w-full max-h-full fixed px-96 2xl:pr-px inset-0 z-50">
+          <div class="max-h-10 w-10 items-center justify-center pt-10 relative top-72 -left-52 md:top-60 md:left-52 animate-pulse rounded-full border-4 border-indigo-500	2xl:left-96 2xl:top-80
+          3xl:left-96
+          "></div>
           
         </div>
       )}

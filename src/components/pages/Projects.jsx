@@ -77,7 +77,7 @@ function Projects() {
                 ))}
               </Carousel>
                
-              <p className='text-nowrap pt-2 italic text-green-600 md:pt-10 flex-nowrap'>Drag and scroll<FiArrowRightCircle /> </p>
+              <div className='text-nowrap pt-2 italic text-green-800 md:pt-4 flex-nowrap float-left'><FiArrowRightCircle /> </div>
             </div>
             <div className='ml-0 md:ml-16'>
               <h2 className="text-[#3275ba] text-2xl font-bold md:text-5xl mb-4 sirin-stencil-regular">{project.title}</h2>

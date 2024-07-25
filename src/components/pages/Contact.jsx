@@ -103,7 +103,7 @@ const Contact = () => {
             <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
               <FiGithub />
             </div>
-            <a href="https://github.com/kavinkumar24/" className='hover:text-indigo-700 hover:underline'>GitHub</a>
+            <a href="https://github.com/kavinkumar24/" target="_blank" rel="noreferrer" className='hover:text-indigo-700 hover:underline'>GitHub</a>
             </div>
 
 
@@ -111,7 +111,7 @@ const Contact = () => {
             <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
               <FiCode />
             </div>
-            <a href="https://leetcode.com/kavinpalanisamy/" className='hover:text-indigo-700 hover:underline'>Leetcode</a>
+            <a href="https://leetcode.com/kavinpalanisamy/" className='hover:text-indigo-700 hover:underline' target="_blank" rel="noreferrer">Leetcode</a>
             </div>
 
 

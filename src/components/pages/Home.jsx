@@ -106,7 +106,7 @@ function Home() {
           </motion.h1>
 
           <motion.p
-            className="text-lg md:text-xl text-black mt-4"
+            className="text-lg md:text-xl text-black mt-4 px-10"
             initial={{ opacity: 0 }}
             animate={isTextVisible ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 1 }}
