@@ -5,6 +5,7 @@ import PHOTO from '../assests/profile-pic.png';
 import DEFAULT_PHOTO from '../assests/cartoon.avif';
 import { TypeAnimation } from 'react-type-animation';
 import Footer from './Footer';
+import { FaInstagram, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 function Home() {
   const [isTextVisible, setIsTextVisible] = useState(false);
@@ -68,26 +69,25 @@ function Home() {
             </h1>
             <br></br>
             <TypeAnimation
-      sequence={[
-        
-        'Full Stack Developer',
-        1000, 
-        'UI/UX designer',
-        1000,
-        'ML researcher',
-        1000,
-        'Content creator',
-        1000
-      ]}
-      wrapper="span"
-      speed={50} className='pridi-regular text-gray-700 text-sm border-b-2 p-2 border-gray-300'
-      style={{ fontSize: '2em', display: 'inline-block' }}
-      repeat={Infinity}
-    />
+              sequence={[
+                'Full Stack Developer',
+                1000,
+                'UI/UX designer',
+                1000,
+                'ML researcher',
+                1000,
+                'Content creator',
+                1000
+              ]}
+              wrapper="span"
+              speed={50} className='pridi-regular text-gray-700 text-sm border-b-2 p-2 border-gray-300'
+              style={{ fontSize: '2em', display: 'inline-block' }}
+              repeat={Infinity}
+            />
           </motion.div>
         </motion.div>
 
-        <div className="quote-container mt-20 mx-8 text-center mb-40">
+        <div className="quote-container mt-10 mx-8 text-center mb-20">
           <motion.p
             className="text-black mt-4 text-7xl"
             initial={{ opacity: 0 }}
@@ -100,13 +100,13 @@ function Home() {
             initial={{ opacity: 0 }}
             animate={isTextVisible ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl md:text-5xl font-bold text-[#1c4fb7] flex flex-col md:flex-row items-start md:items-center justify-center w-full"
+            className="text-4xl md:text-5xl font-bold text-[#1c4fb7] text-center md:text-left flex flex-col md:flex-row items-center md:items-start justify-center w-full"
           >
             "Success is best when it's shared."
           </motion.h1>
 
           <motion.p
-            className="text-lg md:text-xl text-black mt-4 px-10"
+            className="text-lg md:text-xl text-black mt-4 px-6 md:px-10 text-center md:text-left"
             initial={{ opacity: 0 }}
             animate={isTextVisible ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 1 }}
@@ -121,10 +121,54 @@ function Home() {
             inventive solutions that drive the company forward,{' '}
             <span className="highlight bg-yellow-200">fostering growth and success.</span>
           </motion.p>
+
         </div>
-        {/* <div className='bg-slate-100 w-20 grid-cols-3'>
-        <h1>Instagram</h1>
-      </div> */}
+        <div className="contact-container mt-0 mb-20 flex flex-col md:flex-row md:justify-center md:space-x-8">
+        <a href="https://www.instagram.com/its__me__kavin__/" target="_blank" rel="noopener noreferrer">
+  <motion.div
+    className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <FaInstagram className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
+    <div className="contact-info">
+      <h2 className="text-xl font-semibold text-gray-800">Instagram</h2>
+      <p className="text-gray-600">Follow me for updates and more.<br></br><span className='text-sky-500'>its__me__kavin__</span></p>
+    </div>
+  </motion.div>
+</a>
+
+
+  <motion.div
+    className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <a href="mailto:kavinpalanisamy242003@gmail.com">
+      <FaEnvelope className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
+    </a>
+    <div className="contact-info">
+      <h2 className="text-xl font-semibold text-gray-800">Email</h2>
+      <p className="text-gray-600">Reach out to me via email.<br></br><span className='text-sky-500'>kavinpalanisamy242003@gmail.com</span></p>
+    </div>
+  </motion.div>
+
+  <motion.div
+    className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <a href="tel:+1234567890">
+      <FaPhoneAlt className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
+    </a>
+    <div className="contact-info">
+      <h2 className="text-xl font-semibold text-gray-800">Phone</h2>
+      <p className="text-gray-600">Call me for quick conversations.<br></br><span className='text-sky-500'>9345695264</span></p>
+    </div>
+  </motion.div>
+</div>
+
+
       </motion.div>
     
       <Footer />

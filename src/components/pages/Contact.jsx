@@ -3,8 +3,10 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './Navbar';
-import { FiLinkedin,FiGithub, FiMail, FiPhone, FiCode} from 'react-icons/fi';
+import { FiLinkedin, FiGithub, FiMail, FiPhone, FiCode } from 'react-icons/fi';
 import Footer from './Footer';
+import { motion } from 'framer-motion';
+
 const Contact = () => {
   const form = useRef();
 
@@ -25,103 +27,103 @@ const Contact = () => {
   };
 
   return (
-    <div className='bg-gradient-to-b from-[#e2e7f6]'>
-    <Navbar />
-    
-    <div className="mx-4 flex flex-col items-center md:flex-row min-h-screen justify-between md:mx-40 mb-10">
-      <div className="w-full max-w-md p-4 bg-white rounded-2xl shadow-lg md:mt-20">
-        <h2 className="mb-4 text-2xl font-bold text-center text-gray-800">Message me</h2>
-        <form ref={form} onSubmit={sendEmail} className="space-y-4">
-          <div>
-            <label className="block mb-2 text-sm font-bold text-gray-700">Name</label>
-            <input
-              type="text"
-              name="from_name"
-              className="w-full px-3 py-2 text-sm  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 border-2 border-gray-200 "
-              required
+    <div className='bg-gradient-to-b from-[#e2e7f6] min-h-screen'>
+      <Navbar />
+      <div className="container mx-auto px-7 md:px-10 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mt-20 lg:mt-20">
+          <div className="bg-white p-6 rounded-2xl shadow-lg w-full">
+            <h2 className="mb-4 text-2xl font-bold text-center text-gray-800">Message me</h2>
+            <form ref={form} onSubmit={sendEmail} className="space-y-4">
+              <div>
+                <label className="block mb-2 text-sm font-bold text-gray-700">Name</label>
+                <input
+                  type="text"
+                  name="from_name"
+                  className="w-full px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 border-2 border-gray-200"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block mb-2 text-sm font-bold text-gray-700">Email</label>
+                <input
+                  type="email"
+                  name="from_email"
+                  className="w-full px-3 py-2 text-sm border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block mb-2 text-sm font-bold text-gray-700">Message</label>
+                <textarea
+                  name="message"
+                  className="w-full h-28 px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 border-2 border-gray-200"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="w-full px-4 py-2 font-bold text-white bg-indigo-500 rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+          <div className="space-y-6">
+            <ContactCard
+              icon={<FiLinkedin className="text-indigo-700 text-3xl hover:text-indigo-500 transition duration-300" />}
+              title="LinkedIn"
+              description="its__me__kavin__"
+              href="https://www.linkedin.com/in/kavinpalanisamy"
             />
-          </div>
-          <div>
-            <label className="block mb-2 text-sm font-bold text-gray-700">Email</label>
-            <input
-              type="email"
-              name="from_email"
-              className="w-full px-3 py-2 text-sm border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-              required
+            <ContactCard
+              icon={<FiMail className="text-indigo-700 text-3xl hover:text-indigo-500 transition duration-300" />}
+              title="Gmail"
+              description="kavinpalanisamy242003@gmail.com"
+              href="mailto:kavinpalanisamy242003@gmail.com"
             />
-          </div>
-          <div>
-            <label className="block mb-2 text-sm font-bold text-gray-700">Message</label>
-            <textarea
-              name="message"
-              className="w-full h-10 px-3 py-2 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 border-2 border-gray-200 "
-              required
-            ></textarea>
-          </div>
-          <div>
-            <button
-              type="submit"
-              className="w-full px-4 py-2 font-bold text-white bg-indigo-500 rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
-            >
-              Send
-            </button>
-          </div>
-        </form>
-      </div>
-      <ToastContainer />
-      
-      <div className="w-full max-w-md p-8 rounded-lg mt-10 md:mt-20">
-
-        <div className=' max-w-md p-8 space-y-20 w-3/2'>
-          <div className='flex flex-col'>
-            <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 w-full rounded-md'>
-            <div className='p-2 bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
-              <FiLinkedin />
-            </div>
-            <div className='text-center justify-center mx-auto mt-1'>
-              <a href = "https://www.linkedin.com/in/kavinpalanisamy" target="_blank" rel="noreferrer" className='hover:text-indigo-700 hover:underline'>Linked IN</a>
-            </div>
-            </div>
-
-            <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 w-full rounded-md'>
-            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
-              <FiMail />
-            </div> 
-            <div className='text-center justify-center mx-auto mt-1'>
-            <a href="mailto:kavinpalanisamy242003@gmail.com" title='kavinpalanisamy242003@gmail.com' className='hover:text-indigo-700 hover:underline'>Gmail</a>
-            </div>
-            </div>
-
-            <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 rounded-md'>
-            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90' >
-              <FiPhone />
-            </div>
-            <h1>9345695264</h1>
-            </div>
-
-            <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 rounded-md'>
-            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
-              <FiGithub />
-            </div>
-            <a href="https://github.com/kavinkumar24/" target="_blank" rel="noreferrer" className='hover:text-indigo-700 hover:underline'>GitHub</a>
-            </div>
-
-
-            <div className='bg-white shadow-md flex flex-row space-x-10 p-4 mb-4 rounded-md'>
-            <div className='p-2  bg-blue-700 rounded-full text-white shadow-md hover:scale-90'>
-              <FiCode />
-            </div>
-            <a href="https://leetcode.com/kavinpalanisamy/" className='hover:text-indigo-700 hover:underline' target="_blank" rel="noreferrer">Leetcode</a>
-            </div>
-
-
+            <ContactCard
+              icon={<FiPhone className="text-indigo-700 text-3xl hover:text-indigo-500 transition duration-300" />}
+              title="Phone"
+              description="9345695264"
+              href="tel:9345695264"
+            />
+            <ContactCard
+              icon={<FiGithub className="text-indigo-700 text-3xl hover:text-indigo-500 transition duration-300" />}
+              title="GitHub"
+              description="kavinkumar24"
+              href="https://github.com/kavinkumar24"
+            />
+            <ContactCard
+              icon={<FiCode className="text-indigo-700 text-3xl hover:text-indigo-500 transition duration-300" />}
+              title="Leetcode"
+              description="kavinpalanisamy"
+              href="https://leetcode.com/kavinpalanisamy/"
+            />
           </div>
         </div>
       </div>
-    </div>
-    <Footer />
+      <ToastContainer />
+      <Footer />
     </div>
   );
 };
+
+const ContactCard = ({ icon, title, description, href }) => (
+  <motion.div
+    className="bg-white p-4 rounded-lg w-full shadow-lg flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 md:w-[80%] mx-auto"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4">
+      <div className="text-3xl">{icon}</div>
+      <div>
+        <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
+        <p className="text-slate-400">{description}</p>
+      </div>
+    </a>
+  </motion.div>
+);
 
 export default Contact;

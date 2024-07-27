@@ -135,36 +135,36 @@ const cardstools = [
           <div className="container mx-auto px-4 md:-py-10">
               <h1 className='mx-auto md:px-40 text-3xl font-bold mb-4 text-zinc-700'>Education</h1>
               <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
-                  <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
-                        <h4 className="text-md font-bold mb-2">Undergraduate (CT)</h4>
-                        <h3 className="text-sm font-light mb-2">Sathyamangalam</h3>
-                        <h3 className="text-sm font-semibold text-[#007bff]">2021-2025</h3>
+                  <div className="bg-[#eeeeee] p-3 rounded-md w-[75%] mx-auto mb-4 md:mb-0 md:w-[85%]">
+                        <h4 className="text-md font-bold mb-2 text-center">UG</h4>
+                        <h3 className="text-sm font-light mb-2 text-center">Sathyamangalam</h3>
+                        <h3 className="text-sm font-semibold text-[#007bff] text-center">2021-2025</h3>
                     </div>
                     <div className='ml-0 md:ml-16'>
                         <h2 className="text-[#3275ba] text-2xl font-bold md:text-4xl">Bannari Amman Institute of Technology</h2>
-                        <p className="text-base text-justify mt-4">I'm currently pursuing a B.Tech in Computer Technology at Bannari Amman Institute of Technology, where I am in my final year (7th semester). Throughout my studies, from the 1st semester to now, I have been learning all the core concepts of computer science, which has greatly enhanced my understanding of various problems.</p>
+                        <p className="text-base text-justify mt-4">I'm currently pursuing a <span className="highlight bg-violet-200">B.Tech in Computer Technology</span> at Bannari Amman Institute of Technology, where I am in my final year (7th semester). Throughout my studies, from the 1st semester to now, I have been learning all the core concepts of computer science, which has greatly enhanced my understanding of various problems.</p>
                     </div>
                 </div>
               <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
-                  <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
-                      <h4 className="text-md font-bold mb-2">SSLC & HSC</h4>
-                      <h3 className="text-sm font-light mb-2">Dharapuram</h3>
-                      <h3 className="text-sm font-semibold text-[#007bff]">2019 - 2021</h3>
+                  <div className="bg-[#eeeeee] p-2 rounded-md w-[75%] mx-auto mb-4 md:mb-0 md:w-[45%]">
+                      <h4 className="text-md font-bold mb-2 text-center">HSC</h4>
+                      <h3 className="text-sm font-light mb-2 text-center">Dharapuram</h3>
+                      <h3 className="text-sm font-semibold text-[#007bff] text-center">2019 - 2021</h3>
                   </div>
                   <div className='ml-0 md:ml-16'>
                       <h2 className="text-[#3275ba] text-2xl font-bold md:text-4xl">P.M.H.S.S</h2>
-                      <p className="text-base text-justify mt-4">I did my schooling at P.M.H.S.S in Dharapuram, where I completed my 10th, 11th, and 12th standards and learned some basic core subjects (Maths and Physics) along with some life skills.</p>
+                      <p className="text-base text-justify mt-4">I did my schooling at P.M.H.S.S in Dharapuram, where I completed my 12th and learned some basic core subjects in Biology, Maths and Physics along with some life skills.</p>
                   </div>
               </div>
               <div className="bg-white p-4 rounded-2xl shadow-xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
-                  <div className="bg-[#eeeeee] p-2 rounded-md w-full mx-auto mb-4 md:mb-0 md:w-[65%]">
-                      <h4 className="text-md font-bold mb-2">SSLC & HSC</h4>
-                      <h3 className="text-sm font-light mb-2">Dharapuram</h3>
-                      <h3 className="text-sm font-semibold text-[#007bff]">2019 - 2021</h3>
+                  <div className="bg-[#eeeeee] p-2 rounded-md w-[75%] mx-auto mb-4 md:mb-0 md:w-[45%]">
+                      <h4 className="text-md font-bold mb-2 text-center">SSLC & HSC</h4>
+                      <h3 className="text-sm font-light mb-2 text-center">Dharapuram</h3>
+                      <h3 className="text-sm font-semibold text-[#007bff] text-center">2019 - 2021</h3>
                   </div>
                   <div className='ml-0 md:ml-16'>
                       <h2 className="text-[#3275ba] text-2xl font-bold md:text-4xl">P.M.H.S.S</h2>
-                      <p className="text-base text-justify mt-4">I did my schooling at P.M.H.S.S in Dharapuram, where I completed my 10th, 11th, and 12th standards and learned some basic core subjects (Maths and Physics) along with some life skills.</p>
+                      <p className="text-base text-justify mt-4">I did my schooling at P.M.H.S.S in Dharapuram, where I completed my 10th and build a strong foundation in Mathematics which help me to tackle complex problems.</p>
                   </div>
               </div>
             </div>
