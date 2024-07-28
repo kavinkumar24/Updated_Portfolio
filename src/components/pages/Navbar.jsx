@@ -117,18 +117,18 @@ function Navbar() {
         {showMenu ? <IoCloseCircle size={30} /> : <CiMenuFries size={30} />}
       </div>
       {showMenu && (
-        <div className='fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-white ease-in-out duration-700 md:hidden z-50'>
+        <div className='fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-400 bg-white ease-in-out duration-700 md:hidden z-50 shadow-lg baloo-chettan-2'>
           <img src={sign_mobile} alt="sign_logo" width="20%" className="w-28 left-0" />
           <ul className='pt-2 uppercase'>
-          <li class="p-4 border-b border-indigo-300 text-black" onClick={navigate_home}>
-        <div className="flex items-center"> <div className='text-[#322f2e]'><FiHome className='mr-2' /></div>&nbsp;Home
+          <li class="p-4 border-b border-gray-300 text-black shadow-sm bg-gray-100" onClick={navigate_home}>
+        <div className="flex items-center"> <div className='text-[#322f2e]'><FiHome className='mr-2 text-indigo-600' /></div>&nbsp;Home
         </div>
       </li>
-            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_to_skills}><div className="flex items-center"> <div className='text-[#322f2e]'><FiBook className='mr-2' /></div>&nbsp;Skills
+            <li className='p-4 border-b border-gray-300 text-black shadow-sm bg-gray-50'onClick={navigate_to_skills}><div className="flex items-center"> <div className='text-[#322f2e]'><FiBook className='mr-2 text-indigo-600' /></div>&nbsp;Skills
         </div></li>
-            <li className='p-4 border-b border-indigo-300 text-black'onClick={navigate_projects}><div className="flex items-center"> <div className='text-[#322f2e]'><FiBriefcase className='mr-2' /></div>&nbsp;Projects
+            <li className='p-4 border-b border-gray-300 text-black shadow-sm bg-gray-100'onClick={navigate_projects}><div className="flex items-center"> <div className='text-[#322f2e]'><FiBriefcase className='mr-2 text-indigo-600' /></div>&nbsp;Projects
         </div></li>
-            <li className='p-4 border-b border-indigo-300 text-black' onClick={navigate_contact}><div className="flex items-center"> <div className='text-[#322f2e]'><FiPhone className='mr-2' /></div>&nbsp;Contact
+            <li className='p-4 border-b border-gray-300 text-black shadow-sm bg-gray-50' onClick={navigate_contact}><div className="flex items-center"> <div className='text-[#322f2e]'><FiPhone className='mr-2 text-indigo-600' /></div>&nbsp;Contact
         </div></li>
           </ul>
         </div>
