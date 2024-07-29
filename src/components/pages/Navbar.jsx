@@ -134,14 +134,12 @@ function Navbar() {
         </div>
       )}
 
-      {loading && (
-          <div class="bg-white max-w-full max-h-full fixed px-96 2xl:pr-px inset-0 z-50">
-          <div class="max-h-10 w-10 items-center justify-center pt-10 relative top-72 -left-52 md:top-60 md:left-52 animate-pulse rounded-full border-4 border-indigo-500	2xl:left-96 2xl:top-80
-          3xl:left-96
-          "></div>
-          
-        </div>
-      )}
+{loading && (
+  <div className="bg-white fixed inset-0 z-50 flex items-center justify-center">
+    <div className="animate-pulse rounded-md border-2 md:border-4 border-indigo-500 h-10 w-10"></div>
+  </div>
+)}
+
     </div>
   );
 }

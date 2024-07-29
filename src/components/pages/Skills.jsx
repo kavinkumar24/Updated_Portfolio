@@ -27,7 +27,7 @@ import figma from '../assests/Skills/Tools/figma.png'
 import vs from '../assests/Skills/Tools/logo.png'
 import db from '../assests/Skills/Tools/database.png'
 import Footer from './Footer';
-
+import C9 from '../assests/Certificates/certificate9.png'
 
 function Skills() {
 //   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,14 +40,15 @@ function Skills() {
   }, []);
 
   const images = [
-    C1,
-    C2,
-    C3,
-    C4,
-    C5,
-    C6,
-    C7,
-    C8
+    {src:C1,link:'https://drive.google.com/file/d/1ePyIYX-qClz9eUurpO1iy1Yyak2pvLjA/view?usp=sharing'},
+    {src:C2,link:'_blank'},
+    {src:C3,link:'https://coursera.org/share/154f701585c5325ebcdd9aa8b1f713ca'},
+    {src:C4,link:'https://coursera.org/share/a6f2bf58f0e5766e3147e9bda024861a'},
+    {src:C5,link:'https://coursera.org/share/54601825774322ccc8d3bc93491e6700'},
+    {src:C6,link:'https://coursera.org/share/72d3d823e884e81eb09916a66025a630'},
+    {src:C7,link:''},
+    {src:C8,link:'https://learn.nvidia.com/certificates?id=gieBN2hWTz27oZZYARxQ2Q'},
+    {src:C9, link:'https://catalog-education.oracle.com/pls/certview/sharebadge?id=B062912FD9B07A524609D3EFAAFF64715C4A3CFFECCC9CBE57C569FE2F41C4CE'}
 ];
   const cards = [
       { icon: <FiGrid className="w-8 h-8 text-blue-500 mx-auto" />, text: "UI/UX designer" },
@@ -233,22 +234,31 @@ const cardstools = [
                     </div>
                 </div>
 
-      <div className="p-4 rounded-2xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
-                    <div className="container mx-auto px-2 md:py-4">
-                        <h1 className="text-3xl font-bold mb-8 text-center text-zinc-700">Certificates</h1>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {images.map((image, index) => (
-          <div key={index} className="group relative">
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out transform scale-100 group-hover:scale-150 hover:z-50"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-        </div>
+                <div className="p-4 rounded-2xl justify-between mb-8 md:mb-6 md:w-3/4 mx-auto flex flex-col items-center md:flex-row">
+                <div className="container mx-auto px-2 md:py-4">
+                    <h1 className="text-3xl font-bold mb-8 text-center text-zinc-700">Certificates</h1>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {images.map((image, index) => (
+                        <div key={index} className="group relative">
+                             <a
+                            key={index}
+                            href={image.link} 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="relative group"
+                            >
+                        <img
+                            src={image.src}
+                            alt={`Slide ${index}`}
+                            className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out transform scale-100 md:group-hover:scale-110 *:md:hover:z-50"
+                        />
+                        </a>
+                        </div>
+                    ))}
+                    </div>
+                </div>
+                </div>
+
     </div>
 
     <Footer />

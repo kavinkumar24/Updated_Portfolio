@@ -52,8 +52,8 @@ function Home() {
         </div>
 
         <motion.div
-          className="content-box mt-10 md:mt-0 p-4 flex items-center justify-center rounded-r-xl"
-          initial={{ y: '100vh' }}
+        className="content-box mt-5 md:mt-10 p-4 flex items-center justify-center rounded-r-xl"
+        initial={{ y: '100vh' }}
           animate={{ y: '0vh' }}
           transition={{ duration: 1, ease: 'easeOut' }}
           whileHover={{ scale: 1.05 }}
@@ -87,7 +87,7 @@ function Home() {
           </motion.div>
         </motion.div>
 
-        <div className="quote-container mt-10 mx-8 text-center mb-20">
+        <div className="quote-container mt-5 md:mt-10 mx-8 text-center mb-20">
           <motion.p
             className="text-black mt-4 text-7xl"
             initial={{ opacity: 0 }}
