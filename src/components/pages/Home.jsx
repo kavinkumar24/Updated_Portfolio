@@ -72,16 +72,16 @@ function Home() {
               sequence={[
                 'Full Stack Developer',
                 1000,
-                'UI/UX designer',
+                'UI/UX Designer',
                 1000,
-                'ML researcher',
+                'ML Researcher',
                 1000,
-                'Content creator',
+                'Content Creator',
                 1000
               ]}
               wrapper="span"
-              speed={50} className='pridi-regular text-gray-700 text-sm border-b-2 p-2 border-gray-300'
-              style={{ fontSize: '2em', display: 'inline-block' }}
+              speed={50}
+              className="pridi-regular text-gray-700 text-lg md:text-2xl border-b-2 p-2 border-gray-300"
               repeat={Infinity}
             />
           </motion.div>
@@ -113,62 +113,71 @@ function Home() {
           >
             As a computer science student specializing in{' '}
             <span className="highlight bg-indigo-200">web development</span>, I'm
-            excited to join a team as a software Developer. I have a deep passion
+            excited to join a team as a software developer. I have a deep passion
             for creating visually engaging and user-friendly applications, and
             I'm committed to staying at the forefront of new technologies. My aim
             is to{' '}
-            <span className="highlight bg-green-200">adapt and architect </span>
+            <span className="highlight bg-green-200">adapt and architect</span>
             inventive solutions that drive the company forward,{' '}
             <span className="highlight bg-yellow-200">fostering growth and success.</span>
           </motion.p>
-
         </div>
+
         <div className="contact-container mt-0 mb-20 flex flex-col md:flex-row md:justify-center md:space-x-8">
-        <a href="https://www.instagram.com/its__me__kavin__/" target="_blank" rel="noopener noreferrer">
-  <motion.div
-    className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <FaInstagram className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
-    <div className="contact-info">
-      <h2 className="text-xl font-semibold text-gray-800">Instagram</h2>
-      <p className="text-gray-600">Follow me for updates and more.<br></br><span className='text-sky-500'>its__me__kavin__</span></p>
-    </div>
-  </motion.div>
-</a>
+          <a href="https://www.instagram.com/its__me__kavin__/" target="_blank" rel="noopener noreferrer">
+            <motion.div
+              className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaInstagram className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
+              <div className="contact-info">
+                <h2 className="text-xl font-semibold text-gray-800">Instagram</h2>
+                <p className="text-gray-600">
+                  Follow me for updates and more.
+                  <br />
+                  <span className="text-sky-500">its__me__kavin__</span>
+                </p>
+              </div>
+            </motion.div>
+          </a>
 
+          <motion.div
+            className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <a href="mailto:kavinpalanisamy242003@gmail.com">
+              <FaEnvelope className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
+            </a>
+            <div className="contact-info">
+              <h2 className="text-xl font-semibold text-gray-800">Email</h2>
+              <p className="text-gray-600">
+                Reach out to me via email.
+                <br />
+                <span className="text-sky-500">kavinpalanisamy242003@gmail.com</span>
+              </p>
+            </div>
+          </motion.div>
 
-  <motion.div
-    className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <a href="mailto:kavinpalanisamy242003@gmail.com">
-      <FaEnvelope className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
-    </a>
-    <div className="contact-info">
-      <h2 className="text-xl font-semibold text-gray-800">Email</h2>
-      <p className="text-gray-600">Reach out to me via email.<br></br><span className='text-sky-500'>kavinpalanisamy242003@gmail.com</span></p>
-    </div>
-  </motion.div>
-
-  <motion.div
-    className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-  >
-    <a href="tel:+1234567890">
-      <FaPhoneAlt className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
-    </a>
-    <div className="contact-info">
-      <h2 className="text-xl font-semibold text-gray-800">Phone</h2>
-      <p className="text-gray-600">Call me for quick conversations.<br></br><span className='text-sky-500'>9345695264</span></p>
-    </div>
-  </motion.div>
-</div>
-
-
+          <motion.div
+            className="contact-item bg-white shadow-lg rounded-lg p-6 flex items-center space-x-4 hover:shadow-xl transition-shadow duration-300 mb-6 md:mb-0"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <a href="tel:+1234567890">
+              <FaPhoneAlt className="text-indigo-700 text-4xl hover:text-indigo-500 transition duration-300" />
+            </a>
+            <div className="contact-info">
+              <h2 className="text-xl font-semibold text-gray-800">Phone</h2>
+              <p className="text-gray-600">
+                Call me for quick conversations.
+                <br />
+                <span className="text-sky-500">9345695264</span>
+              </p>
+            </div>
+          </motion.div>
+        </div>
       </motion.div>
     
       <Footer />
