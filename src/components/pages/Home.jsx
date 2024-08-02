@@ -117,8 +117,8 @@ function Home() {
             for creating visually engaging and user-friendly applications, and
             I'm committed to staying at the forefront of new technologies. My aim
             is to{' '}
-            <span className="highlight bg-green-200">adapt and architect</span>
-            inventive solutions that drive the company forward,{' '}
+            <span className="highlight bg-green-200">adapt and architect </span>
+             inventive solutions that drive the company forward,{' '}
             <span className="highlight bg-yellow-200">fostering growth and success.</span>
           </motion.p>
         </div>
