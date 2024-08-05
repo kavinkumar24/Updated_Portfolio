@@ -68,22 +68,35 @@ function Home() {
               Kavin Kumar P
             </h1>
             <br></br>
-            <TypeAnimation
-              sequence={[
-                'Full Stack Developer',
-                1000,
-                'UI/UX Designer',
-                1000,
-                'ML Researcher',
-                1000,
-                'Content Creator',
-                1000
-              ]}
-              wrapper="span"
-              speed={50}
-              className="pridi-regular text-gray-700 text-lg md:text-2xl border-b-2 p-2 border-gray-300"
-              repeat={Infinity}
-            />
+          
+<br />
+<TypeAnimation
+  sequence={[
+    'Full Stack Developer',
+    1000,
+    'UI/UX Designer',
+    1000,
+    'ML Researcher',
+    1000,
+    'Content Creator',
+    1000
+  ]}
+  wrapper="span"
+  speed={50}
+  className="type-animation-text pridi-regular text-gray-700 text-lg md:text-2xl"
+  repeat={Infinity}
+/>
+
+<style jsx>{`
+  .type-animation-text {
+    display: inline-block;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    border-bottom: 2px solid #D1D5DB; /* border-gray-300 */
+  }
+`}</style>
+
           </motion.div>
         </motion.div>
 
