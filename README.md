@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio website
  this website aims to show case my skills, experience and previous work done by me
  link: (https://kavinkumar.onrender.com/)
 
