@@ -61,10 +61,10 @@ function Navbar() {
         <div className={`w-28 left-0`}>
           {window.innerWidth < 768 ? (
             
-            <img src={sign} alt="sign_logo" width="15%" className='w-28' />
+            <h1>KK</h1>
 
           ) : (
-            <img src={sign} alt="sign_logo" width="20%" className='w-28' />
+            <h1>KK</h1>
           )}
         </div>
       <div className='flex'>
